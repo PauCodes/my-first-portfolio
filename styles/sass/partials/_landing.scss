@@ -1,4 +1,4 @@
-.landingBody {
+.landing {
     background-color: #333;
     overflow-x: hidden;
     margin: 0;
@@ -12,7 +12,7 @@
         padding: 50px;
 
         .circleContainer {
-            position: fixed;
+            position: absolute; //FIXED
             top: -100px;
             left: -100px;
 
@@ -55,19 +55,22 @@
         }
 
         .headerContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
             max-width: 1000px;
             margin: 25%;
 
             h1 {
                 font-family: $mainHeader;
                 font-size: 75px;
-                text-align: center;
             }
 
             h2 {
                 font-family: $headers;
                 font-size: 42px;
-                text-align: center;
             }
         }
     }
@@ -119,5 +122,39 @@
     nav ul li+li+li {
         margin-left: 30px;
         transform: translateX(-200%);
+    }
+
+    nav ul li+li+li+li {
+        margin-left: 45px;
+        transform: translateX(-250%);
+    }
+
+    nav ul li+li+li+li+li {
+        margin-left: 60px;
+        transform: translateX(-300%);
+    }
+}
+
+.aboutSection {
+    min-height: 100vh;
+
+    .aboutContainer {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+        .aboutImgContainer {
+            width: 40%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .aboutContent {
+            width: 40%;
+        }
     }
 }

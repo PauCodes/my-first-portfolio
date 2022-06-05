@@ -10,10 +10,10 @@
     <script src="https://kit.fontawesome.com/d08504f8b8.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="landingBody">
+<body>
     <a href="#productsMainContent" class="skip-link">Skip to main content.</a>
 
-    <header>
+    <header class="landing">
         <div class="landingContainer">
             <div class="circleContainer">
                 <div class="circle">
@@ -28,6 +28,11 @@
             <div class="headerContent">
                 <h1 id="text">loading...</h1>
                 <h2>Front End Web Developer</h2>
+                <a href="#target" id="scrollTrigger">
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+
+
             </div>
         </div>
 
@@ -35,17 +40,33 @@
             <ul>
                 <li><i class="fas fa-home"></i>Home</li>
                 <li><i class="fas fa-user-alt"></i>About</li>
+                <li><i class="fa-solid fa-hammer"></i>Toolkit</li>
+                <li><i class="fa-solid fa-display-code"></i>Projects</li>
                 <li><i class="fas fa-envelope"></i>Contact</li>
             </ul>
         </nav>
-
-
-
     </header>
+    <section class="aboutSection" id="about">
+        <div class="wrapper aboutContainer">
+            <div class="aboutImgContainer">
+                <img src="./assets/Pixelcut-0.jpg" alt="">
+            </div>
+            <div class="aboutContent">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quisquam ullam enim dignissimos non
+                    perferendis placeat delectus nemo consequuntur in doloribus architecto velit rem, adipisci minima
+                    suscipit expedita vitae doloreLorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+                    quisquam ullam enim dignissimos non
+                    perferendis placeat delectus nemo consequuntur in doloribus architecto velit rem, adipisci minima
+                    suscipit expedita vitae dolore.</p>
+            </div>
+        </div>
+
+    </section>
 
 
-    <script src="./landing.js"></script>
+    <script src="./landing-loading-text.js"></script>
     <script src="./landing-menu.js"></script>
+    <script src="./scroll-down.js"></script>
 </body>
 
 </html>
