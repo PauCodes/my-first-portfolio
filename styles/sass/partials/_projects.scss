@@ -1,150 +1,144 @@
 .projects {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  .sliderContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
     height: 100vh;
 
-    .sliderContainer {
-        position: relative;
-        overflow: hidden;
-        width: 100vw;
-        height: 100vh;
+    .leftSlide {
+      height: 100%;
+      width: 40%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 0.5s ease-in-out;
 
-        .leftSlide {
-            height: 100%;
-            width: 35%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: transform .5s ease-in-out;
+      .firstProjectInfo,
+      .secondProjectInfo,
+      .thirdProjectInfo,
+      .fourthProjectInfo {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-            .firstProjectInfo,
-            .secondProjectInfo,
-            .thirdProjectInfo,
-            .fourthProjectInfo {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
-                p {
-                    margin: 20px 35px;
-                    text-align: left;
-                }
-
-            }
-
-            .firstProjectInfo {
-                background-color: $nonary;
-            }
-
-            .secondProjectInfo {
-                background-color: $octonary;
-            }
-
-            .thirdProjectInfo {
-                background-color: $primary;
-            }
-
-            .fourthProjectInfo {
-                background-color: $denary;
-            }
+        p {
+          margin: 20px 35px;
+          text-align: left;
         }
+      }
 
-        .rightSlide {
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 35%;
-            width: 65%;
-            transition: transform .5s ease-in-out;
+      .firstProjectInfo {
+        background-color: $nonary;
+      }
 
-            .projectImgContainer {
-                height: 100%;
-                width: 100%;
-                position: relative;
+      .secondProjectInfo {
+        background-color: $octonary;
+      }
 
+      .thirdProjectInfo {
+        background-color: $primary;
+      }
 
-                .projectImages {
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    background-position: center center;
-                    height: 50%;
-                    width: 50%;
-                    position: absolute;
-                    top: 25%;
-                    left: 25%;
-                }
-
-                .firstImg {
-                    background-image: url(../assets/first-project.jpg);
-                }
-
-                .secondImg {
-                    background-image: url(../assets/us-park-app.jpg);
-                }
-
-                .thirdImg {
-                    background-image: url(../assets/first-project.jpg);
-                }
-
-                .fourthImg {
-                    background-image: url(../assets/us-park-app.jpg);
-                }
-            }
-
-            .imgContainer1 {
-                background-color: $secondary;
-            }
-
-            .imgContainer2 {
-                background-color: $senary;
-            }
-
-            .imgContainer3 {
-                background-color: $primary;
-            }
-
-            .imgContainer4 {
-                background-color: $quinary;
-            }
-
-
-
-        }
-
-        .actionButtons button {
-            position: absolute;
-            left: 35%;
-            top: 50%;
-            z-index: 100;
-            background-color: white;
-            border: none;
-            color: gray;
-            font-size: 16px;
-            padding: 15px;
-
-            :hover {
-                color: black;
-            }
-
-            :focus {
-                outline: none;
-            }
-        }
-
-        .actionButtons .downButton {
-            transform: translateX(-100%);
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-        }
-
-        .actionButtons .upButton {
-            transform: translatey(-100%);
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-        }
+      .fourthProjectInfo {
+        background-color: $denary;
+      }
     }
 
+    .rightSlide {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 40%;
+      width: 60%;
+      transition: transform 0.5s ease-in-out;
+
+      .projectImgContainer {
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        .projectImages {
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          height: 50%;
+          width: 50%;
+          position: absolute;
+          top: 25%;
+          left: 25%;
+        }
+
+        .firstImg {
+          background-image: url(../assets/first-project.jpg);
+        }
+
+        .secondImg {
+          background-image: url(../assets/us-park-app.jpg);
+        }
+
+        .thirdImg {
+          background-image: url(../assets/first-project.jpg);
+        }
+
+        .fourthImg {
+          background-image: url(../assets/us-park-app.jpg);
+        }
+      }
+
+      .imgContainer1 {
+        background-color: $secondary;
+      }
+
+      .imgContainer2 {
+        background-color: $senary;
+      }
+
+      .imgContainer3 {
+        background-color: $primary;
+      }
+
+      .imgContainer4 {
+        background-color: $quinary;
+      }
+    }
+
+    .actionButtons button {
+      position: absolute;
+      left: 35%;
+      top: 50%;
+      z-index: 100;
+      background-color: white;
+      border: none;
+      color: gray;
+      font-size: 16px;
+      padding: 15px;
+
+      :hover {
+        color: black;
+      }
+
+      :focus {
+        outline: none;
+      }
+    }
+
+    .actionButtons .downButton {
+      transform: translateX(-100%);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    .actionButtons .upButton {
+      transform: translatey(-100%);
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
 }

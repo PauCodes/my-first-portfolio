@@ -599,7 +599,7 @@ section .wrapper {
 }
 .projects .sliderContainer .leftSlide {
   height: 100%;
-  width: 35%;
+  width: 40%;
   position: absolute;
   top: 0;
   left: 0;
@@ -695,8 +695,8 @@ section .wrapper {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 35%;
-  width: 65%;
+  left: 40%;
+  width: 60%;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -761,7 +761,7 @@ section .wrapper {
 }
 .projects .actionButtons button {
   position: absolute;
-  left: 35%;
+  left: 40%;
   top: 50%;
   z-index: 100;
   background-color: white;
@@ -794,10 +794,16 @@ section .wrapper {
   background-color: white;
   position: relative;
 }
-.tools h2 {
-  padding: 80px;
-  text-align: center;
-  color: #3a86ff;
+.tools .toolTitleCont {
+  height: 20vh;
+  width: 25%;
+  position: relative;
+  margin: 0 auto;
+}
+.tools .toolTitleCont .toolTitleImg {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 .tools .toolKit {
   display: -webkit-box;
@@ -962,7 +968,6 @@ footer p {
   .landing .landingContainer .headerContent h2 {
     font-size: 2rem;
   }
-
   .aboutSection .aboutContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -975,12 +980,10 @@ footer p {
   .aboutSection .aboutContainer .aboutImgContainer {
     width: 65%;
   }
-
   .tools .toolKit li {
     -ms-flex-preferred-size: 33.3333333333%;
         flex-basis: 33.3333333333%;
   }
-
   .contact .contactForm {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1116,7 +1119,6 @@ footer p {
   .landing .landingContainer .headerContent h2 {
     font-size: 1.2rem;
   }
-
   .tools .toolKit li {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
