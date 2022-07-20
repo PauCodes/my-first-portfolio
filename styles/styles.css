@@ -785,7 +785,7 @@ a {
 }
 .tools .toolTitleCont {
   height: 20vh;
-  width: 25%;
+  width: 30%;
   position: relative;
   margin: 0 auto;
 }
@@ -994,67 +994,14 @@ footer p {
   .landing .landingContainer .headerContent h2 {
     font-size: 1.8rem;
   }
-}
-@media (max-width: 750px) {
   .projects .sliderContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    overflow: scroll;
   }
   .projects .sliderContainer .leftSlide {
     width: 100%;
+    top: 0vh;
+    position: revert;
   }
-  .projects .sliderContainer .leftSlide .firstProjectInfo,
-.projects .sliderContainer .leftSlide .secondProjectInfo,
-.projects .sliderContainer .leftSlide .thirdProjectInfo,
-.projects .sliderContainer .leftSlide .fourthProjectInfo {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .projects .sliderContainer .leftSlide .firstProjectInfo h4,
-.projects .sliderContainer .leftSlide .secondProjectInfo h4,
-.projects .sliderContainer .leftSlide .thirdProjectInfo h4,
-.projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
-    margin-bottom: 0;
-  }
-  .projects .sliderContainer .rightSlide {
-    width: 100%;
-    left: 0;
-  }
-  .projects .sliderContainer .rightSlide .projectImgContainer .projectImages {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    height: 100vh;
-    gap: 20px;
-  }
-  .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn {
-    width: 230px;
-  }
-  .projects .sliderContainer .imgContainer1,
-.projects .sliderContainer .imgContainer2,
-.projects .sliderContainer .imgContainer3,
-.projects .sliderContainer .imgContainer4 {
-    background-color: transparent;
-  }
-  .projects .actionButtons button {
-    left: 90%;
-  }
-  .projects .actionButtons .downButton {
-    -webkit-transform: none;
-            transform: none;
-  }
-  .projects .actionButtons .upButton {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-  }
-}
-@media (max-width: 350px) {
   .projects .sliderContainer .leftSlide .firstProjectInfo,
 .projects .sliderContainer .leftSlide .secondProjectInfo,
 .projects .sliderContainer .leftSlide .thirdProjectInfo,
@@ -1067,26 +1014,56 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo h2,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h2,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0;
+    margin-bottom: 8px;
+    margin-top: 30px;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo h4,
 .projects .sliderContainer .leftSlide .secondProjectInfo h4,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h4,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo p,
 .projects .sliderContainer .leftSlide .secondProjectInfo p,
 .projects .sliderContainer .leftSlide .thirdProjectInfo p,
 .projects .sliderContainer .leftSlide .fourthProjectInfo p {
-    margin: 0 35px;
+    margin: 20px 15px;
+  }
+  .projects .sliderContainer .rightSlide {
+    width: 100%;
+    left: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .projects .sliderContainer .rightSlide .projectImgContainer .projectImages {
-    gap: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    height: 100vh;
+    gap: 40px;
   }
   .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn {
-    width: 180px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  .projects .sliderContainer .imgContainer1,
+.projects .sliderContainer .imgContainer2,
+.projects .sliderContainer .imgContainer3,
+.projects .sliderContainer .imgContainer4 {
+    background-color: transparent;
+  }
+  .projects .sliderContainer .imgContainer1 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .projects .sliderContainer .actionButtons {
+    display: none;
   }
 }
 @media (max-width: 719px) {

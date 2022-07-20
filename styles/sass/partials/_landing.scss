@@ -446,7 +446,7 @@
 
   .toolTitleCont {
     height: 20vh;
-    width: 25%;
+    width: 30%;
     position: relative;
     margin: 0 auto;
     .toolTitleImg {
@@ -692,110 +692,168 @@ footer {
       }
     }
   }
-}
-
-@media (max-width: 750px) {
   .projects {
     .sliderContainer {
-      display: flex;
-      flex-direction: column;
-
+      overflow: scroll;
       .leftSlide {
         width: 100%;
-
+        top: 0vh;
+        position: revert;
         .firstProjectInfo,
         .secondProjectInfo,
         .thirdProjectInfo,
         .fourthProjectInfo {
           justify-content: start;
-
+          h2 {
+            margin-bottom: 8px;
+            margin-top: 30px;
+          }
           h4 {
-            margin-bottom: 0;
+            margin-bottom: 0px;
+          }
+          p {
+            margin: 20px 15px;
           }
         }
       }
-
       .rightSlide {
         width: 100%;
-        left: 0;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
 
         .projectImgContainer {
+          //   border: 3px solid green;
           .projectImages {
             justify-content: end;
             height: 100vh;
-            gap: 20px;
+            gap: 40px;
+            // border: 3px solid red;
           }
-
           .moreInfoBtn {
-            width: 230px;
+            width: 300px;
+            margin-bottom: 30px;
           }
         }
       }
-
       .imgContainer1,
       .imgContainer2,
       .imgContainer3,
       .imgContainer4 {
         background-color: transparent;
       }
-    }
-
-    .actionButtons {
-      button {
-        left: 90%;
+      .imgContainer1 {
+        order: 4;
       }
-
-      .downButton {
-        transform: none;
-      }
-
-      .upButton {
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
+      .actionButtons {
+        display: none;
       }
     }
   }
 }
 
-@media (max-width: 350px) {
-  .projects {
-    .sliderContainer {
-      .leftSlide {
-        .firstProjectInfo,
-        .secondProjectInfo,
-        .thirdProjectInfo,
-        .fourthProjectInfo {
-          justify-content: start;
+// @media (max-width: 750px) {
+//   .projects {
+//     .sliderContainer {
+//       display: flex;
+//       flex-direction: column;
 
-          h2 {
-            font-size: 1.5rem;
-            margin-bottom: 0;
-          }
+//       .leftSlide {
+//         width: 100%;
 
-          h4 {
-            margin-bottom: 0;
-          }
+//         .firstProjectInfo,
+//         .secondProjectInfo,
+//         .thirdProjectInfo,
+//         .fourthProjectInfo {
+//           justify-content: start;
 
-          p {
-            margin: 0 35px;
-          }
-        }
-      }
+//           h4 {
+//             margin-bottom: 0;
+//           }
+//         }
+//       }
 
-      .rightSlide {
-        .projectImgContainer {
-          .projectImages {
-            gap: 0;
-          }
+//       .rightSlide {
+//         width: 100%;
+//         left: 0;
 
-          .moreInfoBtn {
-            width: 180px;
-          }
-        }
-      }
-    }
-  }
-}
+//         .projectImgContainer {
+//           .projectImages {
+//             justify-content: end;
+//             height: 100vh;
+//             gap: 20px;
+//           }
+
+//           .moreInfoBtn {
+//             width: 230px;
+//           }
+//         }
+//       }
+
+//       .imgContainer1,
+//       .imgContainer2,
+//       .imgContainer3,
+//       .imgContainer4 {
+//         background-color: transparent;
+//       }
+//     }
+
+//     .actionButtons {
+//       button {
+//         left: 90%;
+//       }
+
+//       .downButton {
+//         transform: none;
+//       }
+
+//       .upButton {
+//         border-top-left-radius: 5px;
+//         border-bottom-left-radius: 5px;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 350px) {
+//   .projects {
+//     .sliderContainer {
+//       .leftSlide {
+//         .firstProjectInfo,
+//         .secondProjectInfo,
+//         .thirdProjectInfo,
+//         .fourthProjectInfo {
+//           justify-content: start;
+
+//           h2 {
+//             font-size: 1.5rem;
+//             margin-bottom: 0;
+//           }
+
+//           h4 {
+//             margin-bottom: 0;
+//           }
+
+//           p {
+//             margin: 0 35px;
+//           }
+//         }
+//       }
+
+//       .rightSlide {
+//         .projectImgContainer {
+//           .projectImages {
+//             gap: 0;
+//           }
+
+//           .moreInfoBtn {
+//             width: 180px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media (max-width: 719px) {
   .landing {
