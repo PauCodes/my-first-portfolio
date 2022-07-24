@@ -361,6 +361,10 @@ section .wrapper {
   margin: 0 auto;
 }
 
+p {
+  font-size: 0.9rem;
+}
+
 .landing {
   background-color: #FEEAFA;
   overflow-x: hidden;
@@ -380,6 +384,7 @@ section .wrapper {
   width: 100vw;
   min-height: 100vh;
   padding: 50px;
+  position: relative;
 }
 .landing .landingContainer .circleContainer {
   position: absolute;
@@ -457,12 +462,11 @@ section .wrapper {
   text-align: center;
 }
 .landing .landingContainer .headerContent .goDown {
-  position: relative;
-  top: 140px;
+  position: absolute;
+  bottom: 10%;
 }
 .landing .landingContainer .headerContent .goDown .fa-solid {
   color: #F4ACB7;
-  position: absolute;
   font-size: 50px;
   -webkit-animation: bounce 3s ease infinite;
           animation: bounce 3s ease infinite;
@@ -535,6 +539,7 @@ section .wrapper {
   color: black;
   font-weight: bold;
   margin: 0;
+  padding: 5px;
 }
 .landing nav ul li + li {
   margin-left: 15px;
@@ -571,11 +576,9 @@ section .wrapper {
   min-height: 100vh;
 }
 .aboutSection .aboutContainer .aboutImgContainer {
-  width: 40%;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 50%;
-  background-color: #F4ACB7;
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative;
 }
 .aboutSection .aboutContainer .aboutImgContainer img {
   width: 100%;
@@ -632,8 +635,14 @@ section .wrapper {
 .projects .sliderContainer .leftSlide .secondProjectInfo p,
 .projects .sliderContainer .leftSlide .thirdProjectInfo p,
 .projects .sliderContainer .leftSlide .fourthProjectInfo p {
-  margin: 20px 35px;
+  margin: 20px 40px;
   text-align: left;
+}
+.projects .sliderContainer .leftSlide .firstProjectInfo p a,
+.projects .sliderContainer .leftSlide .secondProjectInfo p a,
+.projects .sliderContainer .leftSlide .thirdProjectInfo p a,
+.projects .sliderContainer .leftSlide .fourthProjectInfo p a {
+  color: #fcf473;
 }
 .projects .sliderContainer .leftSlide .firstProjectInfo {
   background-color: #6d6875;
@@ -734,11 +743,7 @@ section .wrapper {
   display: -ms-flexbox;
   display: flex;
   width: 350px;
-  bottom: 50px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   gap: 35px;
 }
 .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn a {
@@ -828,6 +833,7 @@ section .wrapper {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   text-align: center;
+  position: relative;
 }
 .tools .toolKit li .htmlLogo,
 .tools .toolKit li .cssLogo,
@@ -838,6 +844,19 @@ section .wrapper {
 .tools .toolKit li .firebaseLogo,
 .tools .toolKit li .gitLogo {
   width: 40%;
+}
+.tools .toolKit li p {
+  display: none;
+}
+.tools .toolKit li :hover + p,
+.tools .toolKit li :focus + p {
+  display: block;
+  color: black;
+  font-weight: 900;
+  position: absolute;
+  bottom: -60px;
+  left: 50px;
+  right: 50px;
 }
 
 .contact {
@@ -907,6 +926,7 @@ section .wrapper {
           flex-direction: column;
   gap: 20px;
   width: 45%;
+  position: relative;
 }
 .contact .contactForm form input,
 .contact .contactForm form textarea {
@@ -918,7 +938,18 @@ section .wrapper {
 .contact .contactForm form textarea:focus {
   outline: none;
 }
-.contact .contactForm form a .sendMessage {
+.contact .contactForm form .submitButton {
+  width: 120px;
+  margin-top: 40px;
+  cursor: pointer;
+  position: absolute;
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  bottom: 13px;
+  left: 14px;
+}
+.contact .contactForm form .sendMessage {
   cursor: pointer;
   width: 150px;
 }
@@ -940,9 +971,6 @@ footer p {
   .landing .landingContainer .headerContent {
     min-height: 80vh;
   }
-  .landing .landingContainer .headerContent .goDown {
-    top: 300px;
-  }
   .landing nav {
     bottom: 30px;
   }
@@ -951,17 +979,14 @@ footer p {
   }
 }
 @media (max-width: 960px) {
-  .projects .sliderContainer .leftSlide .firstProjectInfo h2,
-.projects .sliderContainer .leftSlide .secondProjectInfo h2,
-.projects .sliderContainer .leftSlide .thirdProjectInfo h2,
-.projects .sliderContainer .leftSlide .fourthProjectInfo h2 {
-    font-size: 2rem;
-  }
   .projects .sliderContainer .leftSlide .firstProjectInfo h4,
 .projects .sliderContainer .leftSlide .secondProjectInfo h4,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h4,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
     font-size: 1rem;
+  }
+  h2 {
+    font-size: 2rem;
   }
 }
 @media (max-width: 863px) {
@@ -979,6 +1004,12 @@ footer p {
   }
   .aboutSection .aboutContainer .aboutImgContainer {
     width: 65%;
+  }
+  .tools .toolTitleCont {
+    width: 45%;
+  }
+  .tools .toolTitleCont .toolTitleImg {
+    margin-bottom: 20px;
   }
   .tools .toolKit li {
     -ms-flex-preferred-size: 33.3333333333%;
@@ -1034,12 +1065,6 @@ footer p {
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
     margin-bottom: 0px;
   }
-  .projects .sliderContainer .leftSlide .firstProjectInfo p,
-.projects .sliderContainer .leftSlide .secondProjectInfo p,
-.projects .sliderContainer .leftSlide .thirdProjectInfo p,
-.projects .sliderContainer .leftSlide .fourthProjectInfo p {
-    margin: 20px 15px;
-  }
   .projects .sliderContainer .rightSlide {
     width: 100%;
     left: 0%;
@@ -1051,6 +1076,10 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .projects .sliderContainer .rightSlide .projectImgContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
   .projects .sliderContainer .rightSlide .projectImgContainer .projectImages {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -1059,7 +1088,7 @@ footer p {
     gap: 40px;
   }
   .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn {
-    width: 300px;
+    width: 250px;
     margin-bottom: 30px;
   }
   .projects .sliderContainer .imgContainer1,
@@ -1068,10 +1097,11 @@ footer p {
 .projects .sliderContainer .imgContainer4 {
     background-color: transparent;
   }
-  .projects .sliderContainer .imgContainer1 {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+  .projects .sliderContainer .imgContainer2,
+.projects .sliderContainer .imgContainer4 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .projects .sliderContainer .actionButtons {
     display: none;
@@ -1105,32 +1135,120 @@ footer p {
   .landing .landingContainer .headerContent h1 {
     font-size: 2.5rem;
   }
-  .landing .landingContainer .headerContent .goDown {
-    top: 200px;
+  .landing nav ul {
+    padding-left: 15px;
   }
   .landing nav ul li a img {
     width: 30px;
+  }
+  .aboutSection .aboutContainer .aboutContent h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo h2,
+.projects .sliderContainer .leftSlide .secondProjectInfo h2,
+.projects .sliderContainer .leftSlide .thirdProjectInfo h2,
+.projects .sliderContainer .leftSlide .fourthProjectInfo h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo h4,
+.projects .sliderContainer .leftSlide .secondProjectInfo h4,
+.projects .sliderContainer .leftSlide .thirdProjectInfo h4,
+.projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
+    margin-bottom: 0px;
+    font-size: 0.9rem;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo p,
+.projects .sliderContainer .leftSlide .secondProjectInfo p,
+.projects .sliderContainer .leftSlide .thirdProjectInfo p,
+.projects .sliderContainer .leftSlide .fourthProjectInfo p {
+    margin: 10px 40px;
+  }
+  .projects .sliderContainer .rightSlide .projectImgContainer .projectImages {
+    gap: 5px;
+  }
+  .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn {
+    width: 200px;
+    gap: 15px;
+  }
+  .contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .contact .contactForm form .submitButton {
+    width: 100px;
+  }
+  .contact .contactForm form .sendMessage {
+    width: 130px;
   }
 }
 @media (max-width: 375px) {
   .landing .landingContainer .headerContent h2 {
     font-size: 1rem;
   }
-  .landing .landingContainer .headerContent .goDown {
-    top: 140px;
-  }
   .landing nav ul {
     padding-left: 5px;
+  }
+  .landing nav ul li {
+    padding: 15px 0;
+  }
+  .aboutSection .aboutContainer .aboutContent h2 {
+    font-size: 1.2rem;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo h2,
+.projects .sliderContainer .leftSlide .secondProjectInfo h2,
+.projects .sliderContainer .leftSlide .thirdProjectInfo h2,
+.projects .sliderContainer .leftSlide .fourthProjectInfo h2 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo h4,
+.projects .sliderContainer .leftSlide .secondProjectInfo h4,
+.projects .sliderContainer .leftSlide .thirdProjectInfo h4,
+.projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
+    font-size: 0.8rem;
+  }
+  .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn {
+    margin-bottom: 15px;
+  }
+  .contact h2 {
+    font-size: 1.2rem;
+  }
+  .contact p {
+    margin-bottom: 10px;
+  }
+  .contact .contactForm .contactContent .socialIcons ul {
+    width: 180px;
+    gap: 10px;
+  }
+  .contact .contactForm form .submitButton {
+    width: 80px;
+  }
+  .contact .contactForm form .sendMessage {
+    width: 100px;
+  }
+  p {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 320px) {
   .landing .landingContainer .headerContent h1 {
     font-size: 2rem;
   }
-  .landing .landingContainer .headerContent .goDown {
-    top: 40px;
+  .landing nav ul li {
+    padding: 10px 0;
   }
   .landing nav ul li a img {
     width: 20px;
+  }
+  .projects .sliderContainer .rightSlide .projectImgContainer .projectImages .imageContainer {
+    display: none;
+  }
+  .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn {
+    width: 170px;
+  }
+  footer {
+    padding: 8px;
   }
 }

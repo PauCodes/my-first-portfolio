@@ -1,6 +1,5 @@
 .landing {
   background-color: $nonary;
-  // background-color: #333;
   overflow-x: hidden;
   margin: 0;
 
@@ -14,6 +13,7 @@
     width: 100vw;
     min-height: 100vh;
     padding: 50px;
+    position: relative;
 
     .circleContainer {
       position: absolute; //FIXED
@@ -85,12 +85,12 @@
       }
 
       .goDown {
-        position: relative;
-        top: 140px;
+        position: absolute;
+        bottom: 10%;
 
         .fa-solid {
           color: $quaternary;
-          position: absolute;
+          // position: absolute;
           font-size: 50px;
           animation: bounce 3s ease infinite;
 
@@ -140,8 +140,6 @@
 
       li {
         padding: 20px 0;
-        // margin: 30px 0;
-        // margin: 40px 0;
         transform: translateX(-100%);
         transition: transform 0.4s ease-in;
 
@@ -155,6 +153,7 @@
             color: black;
             font-weight: bold;
             margin: 0;
+            padding: 5px;
           }
         }
       }
@@ -183,8 +182,6 @@
 }
 
 .aboutSection {
-  // background-color: $yellow;
-
   .aboutContainer {
     display: flex;
     justify-content: space-around;
@@ -193,11 +190,27 @@
     min-height: 100vh;
 
     .aboutImgContainer {
-      width: 40%;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      border-radius: 50%;
-      background-color: $quaternary;
+      // width: 40%;
+      max-width: 300px;
+      margin: 0 auto;
+      position: relative;
+      // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      //   0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      // border-radius: 50%;
+      // background-color: $quaternary;
+
+      // &::before {
+      //   content: "";
+      //   height: 200px;
+      //   width: 200px;
+      //   display: block;
+      //   background-color: $yellow;
+      //   border-radius: 40px;
+      //   position: absolute;
+      //   right: -30px;
+      //   top: -30px;
+      //   z-index: -1;
+      // }
 
       img {
         width: 100%;
@@ -246,21 +259,12 @@
         justify-content: center;
 
         p {
-          margin: 20px 35px;
+          margin: 20px 40px;
           text-align: left;
+          a {
+            color: #fcf473;
+          }
         }
-
-        // .moreInfoBtn button {
-        //     // background-color: #4CAF50;
-        //     border: none;
-        //     // color: white;
-        //     padding: 10px;
-        //     text-align: center;
-        //     text-decoration: none;
-        //     font-size: 0.85rem;
-        //     width: 85px;
-        //     border-radius: 7px;
-        // }
       }
 
       .firstProjectInfo {
@@ -269,8 +273,6 @@
         h2 {
           color: $brightBlue;
           text-shadow: black 2px 2px;
-          // color: $quaternary;
-          // text-shadow: #2a1306 1px 1px;
         }
 
         h4 {
@@ -371,11 +373,12 @@
         .moreInfoBtn {
           display: flex;
           width: 350px;
-          bottom: 50px;
-          left: 0;
-          right: 0;
-          margin-left: auto;
-          margin-right: auto;
+          // bottom: 50px;
+          // left: 0;
+          // right: 0;
+          // margin-left: auto;
+          // margin-right: auto;
+          margin: 0 auto;
           gap: 35px;
 
           a {
@@ -473,6 +476,7 @@
     li {
       flex-basis: calc((100% / 4));
       text-align: center;
+      position: relative;
 
       .htmlLogo,
       .cssLogo,
@@ -483,6 +487,20 @@
       .firebaseLogo,
       .gitLogo {
         width: 40%;
+      }
+      p {
+        display: none;
+      }
+      :hover + p,
+      :focus + p {
+        display: block;
+        color: black;
+        font-weight: 900;
+        position: absolute;
+        bottom: -60px;
+        left: 50px;
+        right: 50px;
+        // padding: 20px 0;
       }
     }
   }
@@ -536,6 +554,7 @@
       flex-direction: column;
       gap: 20px;
       width: 45%;
+      position: relative;
 
       input,
       textarea {
@@ -548,19 +567,20 @@
         }
       }
 
-      a {
-        .sendMessage {
-          // background-color: #F4ACB7;
-          cursor: pointer;
-          // color: white;
-          // border: none;
-          // padding: 15px 32px;
-          // text-align: center;
-          // text-decoration: none;
-          // font-size: 0.85rem;
-          width: 150px;
-          // border-radius: 7px;
-        }
+      .submitButton {
+        width: 120px;
+        margin-top: 40px;
+        cursor: pointer;
+        position: absolute;
+        color: transparent;
+        background-color: transparent;
+        border: none;
+        bottom: 13px;
+        left: 14px;
+      }
+      .sendMessage {
+        cursor: pointer;
+        width: 150px;
       }
     }
   }
@@ -585,10 +605,6 @@ footer {
     .landingContainer {
       .headerContent {
         min-height: 80vh;
-
-        .goDown {
-          top: 300px;
-        }
       }
     }
 
@@ -616,16 +632,15 @@ footer {
         .secondProjectInfo,
         .thirdProjectInfo,
         .fourthProjectInfo {
-          h2 {
-            font-size: 2rem;
-          }
-
           h4 {
             font-size: 1rem;
           }
         }
       }
     }
+  }
+  h2 {
+    font-size: 2rem;
   }
 }
 
@@ -655,6 +670,12 @@ footer {
   }
 
   .tools {
+    .toolTitleCont {
+      width: 45%;
+      .toolTitleImg {
+        margin-bottom: 20px;
+      }
+    }
     .toolKit {
       li {
         flex-basis: calc((100% / 3));
@@ -711,10 +732,10 @@ footer {
           h4 {
             margin-bottom: 0px;
           }
-          p {
-            margin: 20px 15px;
-          }
         }
+        // .secondProjectInfo {
+        //   order: 3;
+        // }
       }
       .rightSlide {
         width: 100%;
@@ -723,15 +744,15 @@ footer {
         flex-direction: column;
 
         .projectImgContainer {
-          //   border: 3px solid green;
+          width: 70%;
+          margin: 0 auto;
           .projectImages {
             justify-content: end;
             height: 100vh;
             gap: 40px;
-            // border: 3px solid red;
           }
           .moreInfoBtn {
-            width: 300px;
+            width: 250px;
             margin-bottom: 30px;
           }
         }
@@ -742,9 +763,13 @@ footer {
       .imgContainer4 {
         background-color: transparent;
       }
-      .imgContainer1 {
-        order: 4;
+      .imgContainer2,
+      .imgContainer4 {
+        order: 1;
       }
+      // .imgContainer3 {
+      //   order: 3;
+      // }
       .actionButtons {
         display: none;
       }
@@ -911,21 +936,78 @@ footer {
         h1 {
           font-size: 2.5rem;
         }
-
-        .goDown {
-          top: 200px;
-        }
       }
     }
 
     nav {
       ul {
+        padding-left: 15px;
         li {
           a {
             img {
               width: 30px;
             }
           }
+        }
+      }
+    }
+  }
+  .aboutSection {
+    .aboutContainer {
+      .aboutContent {
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .projects {
+    .sliderContainer {
+      .leftSlide {
+        .firstProjectInfo,
+        .secondProjectInfo,
+        .thirdProjectInfo,
+        .fourthProjectInfo {
+          h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0px;
+          }
+          h4 {
+            margin-bottom: 0px;
+            font-size: 0.9rem;
+          }
+          p {
+            margin: 10px 40px;
+          }
+        }
+      }
+      .rightSlide {
+        .projectImgContainer {
+          .projectImages {
+            gap: 5px;
+          }
+          .moreInfoBtn {
+            width: 200px;
+            gap: 15px;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+    }
+    .contactForm {
+      form {
+        .submitButton {
+          width: 100px;
+        }
+        .sendMessage {
+          width: 130px;
         }
       }
     }
@@ -939,18 +1021,81 @@ footer {
         h2 {
           font-size: 1rem;
         }
-
-        .goDown {
-          top: 140px;
-        }
       }
     }
 
     nav {
       ul {
         padding-left: 5px;
+        li {
+          padding: 15px 0;
+        }
       }
     }
+  }
+
+  .aboutSection {
+    .aboutContainer {
+      .aboutContent {
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .projects {
+    .sliderContainer {
+      .leftSlide {
+        .firstProjectInfo,
+        .secondProjectInfo,
+        .thirdProjectInfo,
+        .fourthProjectInfo {
+          h2 {
+            font-size: 1.2rem;
+            margin-top: 15px;
+          }
+          h4 {
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .rightSlide {
+        .projectImgContainer {
+          .moreInfoBtn {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    .contactForm {
+      .contactContent {
+        .socialIcons {
+          ul {
+            width: 180px;
+            gap: 10px;
+          }
+        }
+      }
+      form {
+        .submitButton {
+          width: 80px;
+        }
+        .sendMessage {
+          width: 100px;
+        }
+      }
+    }
+  }
+  p {
+    font-size: 0.8rem;
   }
 }
 
@@ -961,16 +1106,13 @@ footer {
         h1 {
           font-size: 2rem;
         }
-
-        .goDown {
-          top: 40px;
-        }
       }
     }
 
     nav {
       ul {
         li {
+          padding: 10px 0;
           a {
             img {
               width: 20px;
@@ -979,5 +1121,25 @@ footer {
         }
       }
     }
+  }
+  .projects {
+    .sliderContainer {
+      .rightSlide {
+        .projectImgContainer {
+          .projectImages {
+            .imageContainer {
+              display: none;
+            }
+          }
+          .moreInfoBtn {
+            width: 170px;
+            // gap: 15px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding: 8px;
   }
 }
