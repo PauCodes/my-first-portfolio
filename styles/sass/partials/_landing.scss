@@ -90,7 +90,6 @@
 
         .fa-solid {
           color: $quaternary;
-          // position: absolute;
           font-size: 50px;
           animation: bounce 3s ease infinite;
 
@@ -184,49 +183,69 @@
 .aboutSection {
   .aboutContainer {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-content: center;
     align-items: center;
     min-height: 100vh;
 
     .aboutImgContainer {
-      // width: 40%;
-      max-width: 300px;
-      margin: 0 auto;
-      position: relative;
-      // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-      //   0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      // border-radius: 50%;
-      // background-color: $quaternary;
-
-      // &::before {
-      //   content: "";
-      //   height: 200px;
-      //   width: 200px;
-      //   display: block;
-      //   background-color: $yellow;
-      //   border-radius: 40px;
-      //   position: absolute;
-      //   right: -30px;
-      //   top: -30px;
-      //   z-index: -1;
-      // }
+      width: calc(50% - 30px);
+      display: flex;
+      justify-content: center;
+      margin-right: 15px;
 
       img {
-        width: 100%;
+        max-width: 300px;
+        border-radius: 50px;
+        border: 3px solid $quaternary;
       }
     }
 
     .aboutContent {
-      width: 50%;
-
-      h2 {
-        color: $brightBlue;
-        text-shadow: #2a1306 1px 1px;
+      width: calc(50% - 30px);
+      margin-left: 15px;
+      .aboutTitle {
+        width: 250px;
+        margin-top: 10px;
+        img {
+          width: 90%;
+        }
       }
 
       .about {
         margin: 10px auto;
+      }
+    }
+    .thingsIDo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      margin-top: 90px;
+      img {
+        width: 15%;
+        // transform: rotate(15deg) scale(1.4);
+        transition: 0.3s ease-in-out;
+        &:hover {
+          transform: rotate(0) scale(1.3);
+        }
+      }
+
+      .runningPostIt {
+        transform: rotate(-10deg) scale(1);
+      }
+      .playPostIt {
+        transform: rotate(5deg) scale(1);
+      }
+      .craftPostIt {
+        transform: rotate(5deg) scale(1);
+      }
+      .familyPostIt {
+        transform: rotate(-10deg) scale(1);
+      }
+      .bakingPostIt {
+        transform: rotate(-5deg) scale(1);
       }
     }
   }
@@ -449,7 +468,7 @@
 
   .toolTitleCont {
     height: 20vh;
-    width: 30%;
+    width: 250px;
     position: relative;
     margin: 0 auto;
     .toolTitleImg {
@@ -500,7 +519,7 @@
         bottom: -60px;
         left: 50px;
         right: 50px;
-        // padding: 20px 0;
+        margin-top: 15px;
       }
     }
   }
@@ -520,10 +539,14 @@
       display: flex;
       flex-direction: column;
       width: 35%;
-      margin-bottom: 10%;
+      margin-bottom: 5%;
 
-      h2 {
-        color: $quaternary;
+      .contactTitle {
+        width: 250px;
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+        }
       }
 
       p {
@@ -531,12 +554,13 @@
       }
 
       .socialIcons ul {
-        width: 200px;
+        width: 230px;
         display: flex;
         justify-content: start;
         align-content: center;
         align-items: center;
         gap: 15px;
+        margin-left: -10px;
 
         li {
           flex: 1;
@@ -661,18 +685,27 @@ footer {
 
       .aboutContent {
         width: 90%;
+        // .aboutTitle {
+        //   width: 25%;
+        // }
       }
 
       .aboutImgContainer {
         width: 65%;
+        margin: 50px auto;
+      }
+      .thingsIDo {
+        margin-bottom: 30px;
+        margin-top: 30px;
       }
     }
   }
 
   .tools {
     .toolTitleCont {
-      width: 45%;
+      // width: 250px;
       .toolTitleImg {
+        // width: 100%;
         margin-bottom: 20px;
       }
     }
@@ -686,14 +719,21 @@ footer {
   .contact {
     .contactForm {
       flex-direction: column;
+      justify-content: space-evenly;
 
       .contactContent,
       form {
         width: 80%;
+        .submitButton {
+          width: 45%;
+        }
       }
 
       .contactContent {
         margin-bottom: 0;
+        .contactTitle {
+          margin-top: 50px;
+        }
       }
     }
   }
@@ -713,6 +753,7 @@ footer {
       }
     }
   }
+
   .projects {
     .sliderContainer {
       overflow: scroll;
@@ -733,9 +774,6 @@ footer {
             margin-bottom: 0px;
           }
         }
-        // .secondProjectInfo {
-        //   order: 3;
-        // }
       }
       .rightSlide {
         width: 100%;
@@ -767,118 +805,13 @@ footer {
       .imgContainer4 {
         order: 1;
       }
-      // .imgContainer3 {
-      //   order: 3;
-      // }
+
       .actionButtons {
         display: none;
       }
     }
   }
 }
-
-// @media (max-width: 750px) {
-//   .projects {
-//     .sliderContainer {
-//       display: flex;
-//       flex-direction: column;
-
-//       .leftSlide {
-//         width: 100%;
-
-//         .firstProjectInfo,
-//         .secondProjectInfo,
-//         .thirdProjectInfo,
-//         .fourthProjectInfo {
-//           justify-content: start;
-
-//           h4 {
-//             margin-bottom: 0;
-//           }
-//         }
-//       }
-
-//       .rightSlide {
-//         width: 100%;
-//         left: 0;
-
-//         .projectImgContainer {
-//           .projectImages {
-//             justify-content: end;
-//             height: 100vh;
-//             gap: 20px;
-//           }
-
-//           .moreInfoBtn {
-//             width: 230px;
-//           }
-//         }
-//       }
-
-//       .imgContainer1,
-//       .imgContainer2,
-//       .imgContainer3,
-//       .imgContainer4 {
-//         background-color: transparent;
-//       }
-//     }
-
-//     .actionButtons {
-//       button {
-//         left: 90%;
-//       }
-
-//       .downButton {
-//         transform: none;
-//       }
-
-//       .upButton {
-//         border-top-left-radius: 5px;
-//         border-bottom-left-radius: 5px;
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width: 350px) {
-//   .projects {
-//     .sliderContainer {
-//       .leftSlide {
-//         .firstProjectInfo,
-//         .secondProjectInfo,
-//         .thirdProjectInfo,
-//         .fourthProjectInfo {
-//           justify-content: start;
-
-//           h2 {
-//             font-size: 1.5rem;
-//             margin-bottom: 0;
-//           }
-
-//           h4 {
-//             margin-bottom: 0;
-//           }
-
-//           p {
-//             margin: 0 35px;
-//           }
-//         }
-//       }
-
-//       .rightSlide {
-//         .projectImgContainer {
-//           .projectImages {
-//             gap: 0;
-//           }
-
-//           .moreInfoBtn {
-//             width: 180px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 
 @media (max-width: 719px) {
   .landing {
@@ -887,6 +820,13 @@ footer {
         h2 {
           font-size: 1.5rem;
         }
+      }
+    }
+  }
+  .aboutSection {
+    .aboutContainer {
+      .thingsIDo {
+        gap: 30px;
       }
     }
   }
@@ -1006,9 +946,6 @@ footer {
         .submitButton {
           width: 100px;
         }
-        .sendMessage {
-          width: 130px;
-        }
       }
     }
   }
@@ -1037,8 +974,10 @@ footer {
   .aboutSection {
     .aboutContainer {
       .aboutContent {
-        h2 {
-          font-size: 1.2rem;
+        .aboutTitle {
+          img {
+            width: 80%;
+          }
         }
       }
     }
@@ -1068,28 +1007,28 @@ footer {
       }
     }
   }
-  .contact {
-    h2 {
-      font-size: 1.2rem;
+  .tools {
+    .toolTitleCont {
+      .toolTitleImg {
+        width: 90%;
+      }
     }
+  }
+  .contact {
     p {
       margin-bottom: 10px;
     }
     .contactForm {
       .contactContent {
-        .socialIcons {
-          ul {
-            width: 180px;
-            gap: 10px;
+        .contactTitle {
+          img {
+            width: 90%;
           }
         }
       }
       form {
         .submitButton {
           width: 80px;
-        }
-        .sendMessage {
-          width: 100px;
         }
       }
     }
@@ -1133,7 +1072,6 @@ footer {
           }
           .moreInfoBtn {
             width: 170px;
-            // gap: 15px;
           }
         }
       }

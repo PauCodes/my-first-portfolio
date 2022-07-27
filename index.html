@@ -79,28 +79,34 @@
     <section class="aboutSection" id="about">
       <div class="wrapper aboutContainer">
         <div class="aboutImgContainer">
-          <img src="./assets/profile6.png" alt="" />
+          <img src="./assets/profile7.png" alt="" />
         </div>
+
         <div class="aboutContent">
-          <h2>About Me</h2>
+          <div class="aboutTitle">
+            <img src="./assets/aboutTitle2.png" alt="" />
+          </div>
+
+          <h2 class="sr-only">About Me</h2>
           <p class="about">
-            Hi again! I'm a multidiciplinary developer based in Toronto.
+            Hi again! I'm a multidisciplinary developer based in Toronto.
             Fascinated with creating engaging and accessible solutions to
-            provide great user experiences.
-          </p>
-          <p class="about">
+            provide great user experiences.<br />
             I recently graduated from Juno College of Technology, and I'm
-            currently polishing my skills and developing personal projects.
-          </p>
-          <p class="about">
+            currently polishing my skills and developing personal projects.<br />
             I come from the Hospitality Industry and have a strong ability to
-            work in a collaborative environment.
-          </p>
-          <p class="about">
-            When I'm not coding, you can find me enjoying outdors with my
+            work in a collaborative environment.<br />
+            When I'm not coding, you can find me enjoying outdoors with my
             family, running by the lake or baking a delicious plant-based carrot
             cake.
           </p>
+        </div>
+        <div class="thingsIDo">
+          <img class="runningPostIt" src="./assets/runningpostIt2.png" alt="" />
+          <img class="playPostIt" src="./assets/playPostIt2.png" alt="" />
+          <img class="craftPostIt" src="./assets/craftPostIt.png" alt="" />
+          <img class="familyPostIt" src="./assets/familyPostIt.png" alt="" />
+          <img class="bakingPostIt" src="./assets/bakingPostIt2.png" alt="" />
         </div>
       </div>
     </section>
@@ -109,7 +115,7 @@
         <div class="leftSlide">
           <div class="firstProjectInfo">
             <h2>US Park Finder</h2>
-            <h4>HTML5 | SASS | Jabascript | API</h4>
+            <h4>HTML5 | SASS | Javascript | API</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
               excepturi vero asperiores cum distinctio et reprehenderit
@@ -147,12 +153,12 @@
           </div>
           <div class="fourthProjectInfo">
             <h2>US Park Finder</h2>
-            <h4>HTML5 | SASS | Jabascript | API</h4>
+            <h4>HTML5 | SASS | Javascript | API</h4>
 
             <p>
               Planning a trip to one of your favourite national park in America?
               This US Park Finder can help you! This app was built using vanilla
-              JavaScript and grabs data from the NPS National Parks API based on
+              Javascript and grabs data from the NPS National Parks API based on
               user selection of state and preferred outdoor activity. This
               project was developed together with another awesome developer
               <a href="https://www.natalielaing.com/" target="_blank"
@@ -326,10 +332,10 @@
           <li>
             <img
               src="./assets/js-new.png"
-              alt="Jabascript logo"
+              alt="Javascript logo"
               class="jsLogo"
             />
-            <p>Jabascript</p>
+            <p>Javascript</p>
           </li>
           <li>
             <img
@@ -349,7 +355,10 @@
     <section class="contact" id="contact">
       <div class="wrapper contactForm">
         <div class="contactContent">
-          <h2>Let's Connect!</h2>
+          <div class="contactTitle">
+            <img src="./assets/contactTitle4.png" alt="" />
+          </div>
+          <h2 class="sr-only">Let's Connect!</h2>
           <p>
             If you have any question about my work, want to schedule a meeting
             or just want to grab a coffee and have a quick chat, find me in
@@ -405,10 +414,11 @@
             id="message"
             placeholder="message"
             cols="20"
-            rows="8"
+            rows="6"
           ></textarea>
 
           <button type="submit" class="submitButton">Send Message</button>
+
           <img
             src="./assets/sendBtn.png"
             alt="Image of button"
