@@ -306,13 +306,12 @@ h2 {
 h3 {
   font-size: 2rem;
   line-height: 3rem;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 h4 {
-  font-size: 1.7rem;
   line-height: 2rem;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 h5 {
@@ -393,8 +392,8 @@ p {
 }
 .landing .landingContainer .circleContainer .circle {
   background-color: #F4ACB7;
-  height: 265px;
-  width: 265px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
   position: relative;
   -webkit-transition: -webkit-transform 0.5s linear;
@@ -404,12 +403,12 @@ p {
 }
 .landing .landingContainer .circleContainer .circle button {
   position: absolute;
+  width: 25%;
   top: 50%;
-  left: 50%;
+  left: 45%;
   height: 100px;
   background: transparent;
   border: 0;
-  font-size: 1.625rem;
   color: #fff;
   cursor: pointer;
 }
@@ -417,10 +416,10 @@ p {
   outline: none;
 }
 .landing .landingContainer .circleContainer .circle button#open {
-  left: 60%;
+  left: 55%;
 }
 .landing .landingContainer .circleContainer .circle button#close {
-  top: 60%;
+  top: 50%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transform-origin: top left;
@@ -428,6 +427,9 @@ p {
 }
 .landing .landingContainer .circleContainer .circle button i {
   font-size: 2.6rem;
+}
+.landing .landingContainer .circleContainer .circle button img {
+  width: 100%;
 }
 .landing .landingContainer .headerContent {
   display: -webkit-box;
@@ -464,10 +466,10 @@ p {
 .landing .landingContainer .headerContent .goDown {
   position: absolute;
   bottom: 10%;
+  width: 70px;
 }
-.landing .landingContainer .headerContent .goDown .fa-solid {
-  color: #F4ACB7;
-  font-size: 50px;
+.landing .landingContainer .headerContent .goDown img {
+  width: 100%;
   -webkit-animation: bounce 3s ease infinite;
           animation: bounce 3s ease infinite;
 }
@@ -615,6 +617,8 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 35px;
   margin-top: 90px;
 }
@@ -698,16 +702,28 @@ p {
 .projects .sliderContainer .leftSlide .fourthProjectInfo p a {
   color: #fcf473;
 }
+.projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer {
+  display: none;
+}
+.projects .sliderContainer .leftSlide .firstProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileMoreInfoBtn {
+  display: none;
+}
 .projects .sliderContainer .leftSlide .firstProjectInfo {
   background-color: #6d6875;
 }
-.projects .sliderContainer .leftSlide .firstProjectInfo h2 {
+.projects .sliderContainer .leftSlide .firstProjectInfo h3 {
   color: #3a86ff;
   text-shadow: black 2px 2px;
 }
 .projects .sliderContainer .leftSlide .firstProjectInfo h4 {
   color: #fcf473;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .projects .sliderContainer .leftSlide .firstProjectInfo p {
   color: #FEEAFA;
@@ -715,13 +731,13 @@ p {
 .projects .sliderContainer .leftSlide .secondProjectInfo {
   background-color: #5E548E;
 }
-.projects .sliderContainer .leftSlide .secondProjectInfo h2 {
+.projects .sliderContainer .leftSlide .secondProjectInfo h3 {
   color: #F4ACB7;
   text-shadow: #2a1306 1px 1px;
 }
 .projects .sliderContainer .leftSlide .secondProjectInfo h4 {
   color: #fcf473;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .projects .sliderContainer .leftSlide .secondProjectInfo p {
   color: #FEEAFA;
@@ -729,13 +745,13 @@ p {
 .projects .sliderContainer .leftSlide .thirdProjectInfo {
   background-color: #6d6875;
 }
-.projects .sliderContainer .leftSlide .thirdProjectInfo h2 {
+.projects .sliderContainer .leftSlide .thirdProjectInfo h3 {
   color: #3a86ff;
   text-shadow: #2a1306 1px 1px;
 }
 .projects .sliderContainer .leftSlide .thirdProjectInfo h4 {
   color: #fcf473;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .projects .sliderContainer .leftSlide .thirdProjectInfo p {
   color: #FEEAFA;
@@ -743,13 +759,13 @@ p {
 .projects .sliderContainer .leftSlide .fourthProjectInfo {
   background-color: #5E548E;
 }
-.projects .sliderContainer .leftSlide .fourthProjectInfo h2 {
+.projects .sliderContainer .leftSlide .fourthProjectInfo h3 {
   color: #F4ACB7;
   text-shadow: #2a1306 1px 1px;
 }
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
   color: #fcf473;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .projects .sliderContainer .leftSlide .fourthProjectInfo p {
   color: #FEEAFA;
@@ -797,8 +813,14 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 350px;
-  margin: 0 auto;
-  gap: 35px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn a {
   width: 40%;
@@ -823,11 +845,142 @@ p {
   left: 40%;
   top: 50%;
   z-index: 100;
-  background-color: white;
+  background-color: transparent;
   border: none;
-  color: gray;
-  font-size: 0.85rem;
-  padding: 15px;
+  font-size: 16px;
+  padding: 0;
+}
+.projects .actionButtons button img {
+  width: 35px;
+  cursor: pointer;
+}
+.projects .actionButtons button .upArrow {
+  -webkit-animation: top 3s ease infinite;
+          animation: top 3s ease infinite;
+}
+@-webkit-keyframes top {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+@keyframes top {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+.projects .actionButtons button .downArrow {
+  -webkit-animation: down 3s ease infinite;
+          animation: down 3s ease infinite;
+}
+@-webkit-keyframes down {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  40% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes down {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  40% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.projects .actionButtons button .rightArrow {
+  -webkit-animation: right 3s ease infinite;
+          animation: right 3s ease infinite;
+}
+@-webkit-keyframes right {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  60% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes right {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  60% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+.projects .actionButtons button .leftArrow {
+  -webkit-animation: left 3s ease infinite;
+          animation: left 3s ease infinite;
+}
+@-webkit-keyframes left {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  60% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes left {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  60% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 .projects .actionButtons button :hover {
   color: black;
@@ -846,6 +999,10 @@ p {
           transform: translatey(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.projects .leftBtn,
+.projects .rightBtn {
+  display: none;
 }
 
 .tools {
@@ -904,7 +1061,12 @@ p {
 }
 .tools .toolKit li :hover + p,
 .tools .toolKit li :focus + p {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: black;
   font-weight: 900;
   position: absolute;
@@ -1000,7 +1162,6 @@ p {
 }
 .contact .contactForm form .submitButton {
   width: 120px;
-  margin-top: 40px;
   cursor: pointer;
   position: absolute;
   color: transparent;
@@ -1027,31 +1188,29 @@ footer p {
   padding: 0;
 }
 
-@media (min-width: 767px) and (max-width: 1024px) {
-  .landing .landingContainer .headerContent {
-    min-height: 80vh;
-  }
-  .landing nav {
-    bottom: 30px;
-  }
-  .landing nav ul li a img {
-    width: 50px;
-  }
-}
 @media (max-width: 960px) {
+  .projects .sliderContainer .leftSlide .firstProjectInfo h3,
+.projects .sliderContainer .leftSlide .secondProjectInfo h3,
+.projects .sliderContainer .leftSlide .thirdProjectInfo h3,
+.projects .sliderContainer .leftSlide .fourthProjectInfo h3 {
+    font-size: 1.6rem;
+  }
   .projects .sliderContainer .leftSlide .firstProjectInfo h4,
 .projects .sliderContainer .leftSlide .secondProjectInfo h4,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h4,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-  h2 {
-    font-size: 2rem;
+  p {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 863px) {
   .landing .landingContainer .headerContent h2 {
     font-size: 2rem;
+  }
+  .landing .landingContainer .headerContent .goDown {
+    width: 55px;
   }
   .aboutSection .aboutContainer {
     -webkit-box-orient: vertical;
@@ -1069,6 +1228,15 @@ footer p {
   .aboutSection .aboutContainer .thingsIDo {
     margin-bottom: 30px;
     margin-top: 30px;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo h4,
+.projects .sliderContainer .leftSlide .secondProjectInfo h4,
+.projects .sliderContainer .leftSlide .thirdProjectInfo h4,
+.projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
+    font-size: 0.8rem;
+  }
+  .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn {
+    width: 300px;
   }
   .tools .toolTitleCont .toolTitleImg {
     margin-bottom: 20px;
@@ -1090,10 +1258,6 @@ footer p {
 .contact .contactForm form {
     width: 80%;
   }
-  .contact .contactForm .contactContent .submitButton,
-.contact .contactForm form .submitButton {
-    width: 45%;
-  }
   .contact .contactForm .contactContent {
     margin-bottom: 0;
   }
@@ -1102,80 +1266,115 @@ footer p {
   }
 }
 @media (max-width: 789px) {
+  .landing .landingContainer .circleContainer .circle {
+    height: 200px;
+    width: 200px;
+  }
   .landing .landingContainer .headerContent h1 {
     font-size: 3.5rem;
   }
   .landing .landingContainer .headerContent h2 {
     font-size: 1.8rem;
   }
-  .projects .sliderContainer {
-    overflow: scroll;
-  }
+}
+@media screen and (max-width: 768px) {
   .projects .sliderContainer .leftSlide {
+    height: 100%;
     width: 100%;
-    top: 0vh;
-    position: revert;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo,
 .projects .sliderContainer .leftSlide .secondProjectInfo,
 .projects .sliderContainer .leftSlide .thirdProjectInfo,
 .projects .sliderContainer .leftSlide .fourthProjectInfo {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .projects .sliderContainer .leftSlide .firstProjectInfo h2,
-.projects .sliderContainer .leftSlide .secondProjectInfo h2,
-.projects .sliderContainer .leftSlide .thirdProjectInfo h2,
-.projects .sliderContainer .leftSlide .fourthProjectInfo h2 {
-    margin-bottom: 8px;
-    margin-top: 30px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo h4,
 .projects .sliderContainer .leftSlide .secondProjectInfo h4,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h4,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
-    margin-bottom: 0px;
+    font-size: 0.9rem;
   }
-  .projects .sliderContainer .rightSlide {
-    width: 100%;
-    left: 0%;
+  .projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer {
+    width: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin: 30px;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer .mobileProjectImg,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer .mobileProjectImg,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer .mobileProjectImg,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer .mobileProjectImg {
+    width: 100%;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileMoreInfoBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 300px;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo .mobileMoreInfoBtn a,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileMoreInfoBtn a,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileMoreInfoBtn a,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileMoreInfoBtn a {
+    width: 40%;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo .mobileMoreInfoBtn a img,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileMoreInfoBtn a img,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileMoreInfoBtn a img,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileMoreInfoBtn a img {
+    width: 100%;
+  }
+  .projects .sliderContainer .rightSlide {
+    height: 65%;
+    width: 100%;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    display: none;
   }
   .projects .sliderContainer .rightSlide .projectImgContainer {
-    width: 70%;
-    margin: 0 auto;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
-  .projects .sliderContainer .rightSlide .projectImgContainer .projectImages {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    height: 100vh;
-    gap: 40px;
+  .projects .sliderContainer .actionButtons button {
+    left: unset;
   }
-  .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn {
-    width: 250px;
-    margin-bottom: 30px;
+  .projects .sliderContainer .actionButtons button img {
+    width: 50px;
   }
-  .projects .sliderContainer .imgContainer1,
-.projects .sliderContainer .imgContainer2,
-.projects .sliderContainer .imgContainer3,
-.projects .sliderContainer .imgContainer4 {
-    background-color: transparent;
+  .projects .sliderContainer .leftBtn,
+.projects .sliderContainer .rightBtn {
+    display: inline-block;
   }
-  .projects .sliderContainer .imgContainer2,
-.projects .sliderContainer .imgContainer4 {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  .projects .sliderContainer .leftBtn {
+    left: 0;
   }
-  .projects .sliderContainer .actionButtons {
+  .projects .sliderContainer .rightBtn {
+    right: 0;
+  }
+  .projects .sliderContainer .upButton,
+.projects .sliderContainer .downButton {
     display: none;
   }
 }
@@ -1186,24 +1385,36 @@ footer p {
   .aboutSection .aboutContainer .thingsIDo {
     gap: 30px;
   }
+  .aboutSection .aboutContainer .thingsIDo img {
+    width: 25%;
+  }
 }
 @media (max-width: 659px) {
-  .landing .landingContainer .circleContainer .circle {
-    height: 200px;
-    width: 200px;
-  }
-  .landing .landingContainer .circleContainer .circle button i {
-    font-size: 2rem;
-  }
   .landing .landingContainer .headerContent h1 {
     font-size: 3rem;
   }
   .landing .landingContainer .headerContent h2 {
     font-size: 1.2rem;
   }
+  .projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer {
+    width: 300px;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileMoreInfoBtn {
+    width: 250px;
+  }
   .tools .toolKit li {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+  }
+  .contact .contactForm form .sendMessage,
+.contact .contactForm form .submitButton {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 498px) {
@@ -1217,42 +1428,50 @@ footer p {
     width: 30px;
   }
   .aboutSection .aboutContainer .aboutContent h2 {
-    font-size: 1.5rem;
     margin-bottom: 0;
   }
-  .projects .sliderContainer .leftSlide .firstProjectInfo h2,
-.projects .sliderContainer .leftSlide .secondProjectInfo h2,
-.projects .sliderContainer .leftSlide .thirdProjectInfo h2,
-.projects .sliderContainer .leftSlide .fourthProjectInfo h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0px;
+  .projects .sliderContainer .leftSlide .firstProjectInfo h3,
+.projects .sliderContainer .leftSlide .secondProjectInfo h3,
+.projects .sliderContainer .leftSlide .thirdProjectInfo h3,
+.projects .sliderContainer .leftSlide .fourthProjectInfo h3 {
+    font-size: 1.4rem;
   }
-  .projects .sliderContainer .leftSlide .firstProjectInfo h4,
+  .projects .sliderContainer .leftSlide .firstProjectInfo h3,
+.projects .sliderContainer .leftSlide .firstProjectInfo h4,
+.projects .sliderContainer .leftSlide .secondProjectInfo h3,
 .projects .sliderContainer .leftSlide .secondProjectInfo h4,
+.projects .sliderContainer .leftSlide .thirdProjectInfo h3,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h4,
+.projects .sliderContainer .leftSlide .fourthProjectInfo h3,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
-    margin-bottom: 0px;
-    font-size: 0.9rem;
+    margin-bottom: 0;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo p,
 .projects .sliderContainer .leftSlide .secondProjectInfo p,
 .projects .sliderContainer .leftSlide .thirdProjectInfo p,
 .projects .sliderContainer .leftSlide .fourthProjectInfo p {
-    margin: 10px 40px;
+    font-size: 0.75rem;
   }
-  .projects .sliderContainer .rightSlide .projectImgContainer .projectImages {
-    gap: 5px;
+  .projects .sliderContainer .leftSlide .firstProjectInfo span,
+.projects .sliderContainer .leftSlide .secondProjectInfo span,
+.projects .sliderContainer .leftSlide .thirdProjectInfo span,
+.projects .sliderContainer .leftSlide .fourthProjectInfo span {
+    display: none;
   }
-  .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn {
-    width: 200px;
-    gap: 15px;
+  .projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer {
+    margin-bottom: 10px;
+  }
+  .projects .sliderContainer .actionButtons button {
+    top: 60%;
+  }
+  .projects .sliderContainer .actionButtons button img {
+    width: 40px;
   }
   .contact h2 {
-    font-size: 1.5rem;
     margin-bottom: 0;
-  }
-  .contact .contactForm form .submitButton {
-    width: 100px;
   }
 }
 @media (max-width: 375px) {
@@ -1268,12 +1487,11 @@ footer p {
   .aboutSection .aboutContainer .aboutContent .aboutTitle img {
     width: 80%;
   }
-  .projects .sliderContainer .leftSlide .firstProjectInfo h2,
-.projects .sliderContainer .leftSlide .secondProjectInfo h2,
-.projects .sliderContainer .leftSlide .thirdProjectInfo h2,
-.projects .sliderContainer .leftSlide .fourthProjectInfo h2 {
-    font-size: 1.2rem;
-    margin-top: 15px;
+  .aboutSection .aboutContainer .thingsIDo img {
+    width: 30%;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer {
+    margin-top: 90px;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo h4,
 .projects .sliderContainer .leftSlide .secondProjectInfo h4,
@@ -1281,8 +1499,17 @@ footer p {
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
     font-size: 0.8rem;
   }
-  .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn {
-    margin-bottom: 15px;
+  .projects .sliderContainer .leftSlide .firstProjectInfo p,
+.projects .sliderContainer .leftSlide .secondProjectInfo p,
+.projects .sliderContainer .leftSlide .thirdProjectInfo p,
+.projects .sliderContainer .leftSlide .fourthProjectInfo p {
+    margin: 10px 20px;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer {
+    width: 230px;
   }
   .tools .toolTitleCont .toolTitleImg {
     width: 90%;
@@ -1292,9 +1519,6 @@ footer p {
   }
   .contact .contactForm .contactContent .contactTitle img {
     width: 90%;
-  }
-  .contact .contactForm form .submitButton {
-    width: 80px;
   }
   p {
     font-size: 0.8rem;
@@ -1310,13 +1534,45 @@ footer p {
   .landing nav ul li a img {
     width: 20px;
   }
-  .projects .sliderContainer .rightSlide .projectImgContainer .projectImages .imageContainer {
-    display: none;
+  .projects .sliderContainer .leftSlide .firstProjectInfo h3,
+.projects .sliderContainer .leftSlide .secondProjectInfo h3,
+.projects .sliderContainer .leftSlide .thirdProjectInfo h3,
+.projects .sliderContainer .leftSlide .fourthProjectInfo h3 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-top: 20px;
   }
-  .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn {
-    width: 170px;
+  .projects .sliderContainer .leftSlide .firstProjectInfo h4,
+.projects .sliderContainer .leftSlide .secondProjectInfo h4,
+.projects .sliderContainer .leftSlide .thirdProjectInfo h4,
+.projects .sliderContainer .leftSlide .fourthProjectInfo h4 {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo p,
+.projects .sliderContainer .leftSlide .secondProjectInfo p,
+.projects .sliderContainer .leftSlide .thirdProjectInfo p,
+.projects .sliderContainer .leftSlide .fourthProjectInfo p {
+    line-height: 1.2rem;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer {
+    width: 200px;
+    margin-top: 20px;
+  }
+  .projects .sliderContainer .leftSlide .firstProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .secondProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .thirdProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .fourthProjectInfo .mobileMoreInfoBtn {
+    width: 200px;
+    margin-bottom: 20px;
   }
   footer {
     padding: 8px;
+  }
+  footer p {
+    font-size: 0.75rem;
   }
 }
