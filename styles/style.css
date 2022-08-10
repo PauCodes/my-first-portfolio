@@ -1053,7 +1053,9 @@ p {
 .tools .toolKit li .reactLogo,
 .tools .toolKit li .githubLogo,
 .tools .toolKit li .firebaseLogo,
-.tools .toolKit li .gitLogo {
+.tools .toolKit li .gitLogo,
+.tools .toolKit li .photoshopLogo,
+.tools .toolKit li .illustratorLogo {
   width: 40%;
 }
 .tools .toolKit li p {
