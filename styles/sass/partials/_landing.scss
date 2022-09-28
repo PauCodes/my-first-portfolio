@@ -273,7 +273,8 @@
       .firstProjectInfo,
       .secondProjectInfo,
       .thirdProjectInfo,
-      .fourthProjectInfo {
+      .fourthProjectInfo,
+      .fifthProjectInfo {
         height: 100%;
         width: 100%;
         display: flex;
@@ -367,6 +368,24 @@
           color: $nonary;
         }
       }
+
+      .fifthProjectInfo {
+        background-color: $landing;
+
+        h3 {
+          color: $brightBlue;
+          text-shadow: #2a1306 1px 1px;
+        }
+
+        h4 {
+          color: $yellow;
+          font-size: 1rem;
+        }
+
+        p {
+          color: $nonary;
+        }
+      }
     }
 
     .rightSlide {
@@ -432,6 +451,9 @@
 
     .imgContainer4 {
       background-color: $nonary;
+    }
+    .imgContainer5 {
+      background-color: $denary;
     }
   }
 
@@ -732,7 +754,8 @@ footer {
         .firstProjectInfo,
         .secondProjectInfo,
         .thirdProjectInfo,
-        .fourthProjectInfo {
+        .fourthProjectInfo,
+        .fifthProjectInfo {
           h3 {
             font-size: 1.6rem;
           }
@@ -786,7 +809,8 @@ footer {
         .firstProjectInfo,
         .secondProjectInfo,
         .thirdProjectInfo,
-        .fourthProjectInfo {
+        .fourthProjectInfo,
+        .fifthProjectInfo {
           h4 {
             font-size: 0.8rem;
           }
@@ -869,7 +893,8 @@ footer {
         .firstProjectInfo,
         .secondProjectInfo,
         .thirdProjectInfo,
-        .fourthProjectInfo {
+        .fourthProjectInfo,
+        .fifthProjectInfo {
           flex-shrink: 0;
           h4 {
             font-size: 0.9rem;
@@ -979,7 +1004,8 @@ footer {
         .firstProjectInfo,
         .secondProjectInfo,
         .thirdProjectInfo,
-        .fourthProjectInfo {
+        .fourthProjectInfo,
+        .fifthProjectInfo {
           .mobileImgContainer {
             width: 300px;
           }
@@ -1049,7 +1075,8 @@ footer {
         .firstProjectInfo,
         .secondProjectInfo,
         .thirdProjectInfo,
-        .fourthProjectInfo {
+        .fourthProjectInfo,
+        .fifthProjectInfo {
           h3 {
             font-size: 1.4rem;
           }
@@ -1131,7 +1158,8 @@ footer {
         .firstProjectInfo,
         .secondProjectInfo,
         .thirdProjectInfo,
-        .fourthProjectInfo {
+        .fourthProjectInfo,
+        .fifthProjectInfo {
           h4 {
             font-size: 0.8rem;
           }
@@ -1207,7 +1235,8 @@ footer {
         .firstProjectInfo,
         .secondProjectInfo,
         .thirdProjectInfo,
-        .fourthProjectInfo {
+        .fourthProjectInfo,
+        .fifthProjectInfo {
           h3 {
             font-size: 1.2rem;
             line-height: 2rem;
