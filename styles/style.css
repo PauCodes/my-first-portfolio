@@ -673,7 +673,9 @@ p {
 .projects .sliderContainer .leftSlide .secondProjectInfo,
 .projects .sliderContainer .leftSlide .thirdProjectInfo,
 .projects .sliderContainer .leftSlide .fourthProjectInfo,
-.projects .sliderContainer .leftSlide .fifthProjectInfo {
+.projects .sliderContainer .leftSlide .fifthProjectInfo,
+.projects .sliderContainer .leftSlide .sixthProjectInfo,
+.projects .sliderContainer .leftSlide .seventhProjectInfo {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -694,7 +696,9 @@ p {
 .projects .sliderContainer .leftSlide .secondProjectInfo p,
 .projects .sliderContainer .leftSlide .thirdProjectInfo p,
 .projects .sliderContainer .leftSlide .fourthProjectInfo p,
-.projects .sliderContainer .leftSlide .fifthProjectInfo p {
+.projects .sliderContainer .leftSlide .fifthProjectInfo p,
+.projects .sliderContainer .leftSlide .sixthProjectInfo p,
+.projects .sliderContainer .leftSlide .seventhProjectInfo p {
   margin: 20px 40px;
   text-align: left;
 }
@@ -702,21 +706,27 @@ p {
 .projects .sliderContainer .leftSlide .secondProjectInfo p a,
 .projects .sliderContainer .leftSlide .thirdProjectInfo p a,
 .projects .sliderContainer .leftSlide .fourthProjectInfo p a,
-.projects .sliderContainer .leftSlide .fifthProjectInfo p a {
+.projects .sliderContainer .leftSlide .fifthProjectInfo p a,
+.projects .sliderContainer .leftSlide .sixthProjectInfo p a,
+.projects .sliderContainer .leftSlide .seventhProjectInfo p a {
   color: #fcf473;
 }
 .projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .sixthProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileImgContainer {
   display: none;
 }
 .projects .sliderContainer .leftSlide .firstProjectInfo .mobileMoreInfoBtn,
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileMoreInfoBtn,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileMoreInfoBtn,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileMoreInfoBtn,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileMoreInfoBtn {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .sixthProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileMoreInfoBtn {
   display: none;
 }
 .projects .sliderContainer .leftSlide .firstProjectInfo {
@@ -787,6 +797,34 @@ p {
   font-size: 1rem;
 }
 .projects .sliderContainer .leftSlide .fifthProjectInfo p {
+  color: #FEEAFA;
+}
+.projects .sliderContainer .leftSlide .sixthProjectInfo {
+  background-color: #5E548E;
+}
+.projects .sliderContainer .leftSlide .sixthProjectInfo h3 {
+  color: #F4ACB7;
+  text-shadow: #2a1306 1px 1px;
+}
+.projects .sliderContainer .leftSlide .sixthProjectInfo h4 {
+  color: #fcf473;
+  font-size: 1rem;
+}
+.projects .sliderContainer .leftSlide .sixthProjectInfo p {
+  color: #FEEAFA;
+}
+.projects .sliderContainer .leftSlide .seventhProjectInfo {
+  background-color: #6d6875;
+}
+.projects .sliderContainer .leftSlide .seventhProjectInfo h3 {
+  color: #3a86ff;
+  text-shadow: #2a1306 1px 1px;
+}
+.projects .sliderContainer .leftSlide .seventhProjectInfo h4 {
+  color: #fcf473;
+  font-size: 1rem;
+}
+.projects .sliderContainer .leftSlide .seventhProjectInfo p {
   color: #FEEAFA;
 }
 .projects .sliderContainer .rightSlide {
@@ -860,6 +898,12 @@ p {
   background-color: #FEEAFA;
 }
 .projects .sliderContainer .imgContainer5 {
+  background-color: #DEE2FF;
+}
+.projects .sliderContainer .imgContainer6 {
+  background-color: #FEEAFA;
+}
+.projects .sliderContainer .imgContainer7 {
   background-color: #DEE2FF;
 }
 .projects .actionButtons button {
@@ -1217,14 +1261,18 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo h3,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h3,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h3,
-.projects .sliderContainer .leftSlide .fifthProjectInfo h3 {
+.projects .sliderContainer .leftSlide .fifthProjectInfo h3,
+.projects .sliderContainer .leftSlide .sixthProjectInfo h3,
+.projects .sliderContainer .leftSlide .seventhProjectInfo h3 {
     font-size: 1.6rem;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo h4,
 .projects .sliderContainer .leftSlide .secondProjectInfo h4,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h4,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4,
-.projects .sliderContainer .leftSlide .fifthProjectInfo h4 {
+.projects .sliderContainer .leftSlide .fifthProjectInfo h4,
+.projects .sliderContainer .leftSlide .sixthProjectInfo h4,
+.projects .sliderContainer .leftSlide .seventhProjectInfo h4 {
     font-size: 0.9rem;
   }
   p {
@@ -1259,7 +1307,9 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo h4,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h4,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4,
-.projects .sliderContainer .leftSlide .fifthProjectInfo h4 {
+.projects .sliderContainer .leftSlide .fifthProjectInfo h4,
+.projects .sliderContainer .leftSlide .sixthProjectInfo h4,
+.projects .sliderContainer .leftSlide .seventhProjectInfo h4 {
     font-size: 0.8rem;
   }
   .projects .sliderContainer .rightSlide .projectImgContainer .moreInfoBtn {
@@ -1318,7 +1368,9 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo,
 .projects .sliderContainer .leftSlide .thirdProjectInfo,
 .projects .sliderContainer .leftSlide .fourthProjectInfo,
-.projects .sliderContainer .leftSlide .fifthProjectInfo {
+.projects .sliderContainer .leftSlide .fifthProjectInfo,
+.projects .sliderContainer .leftSlide .sixthProjectInfo,
+.projects .sliderContainer .leftSlide .seventhProjectInfo {
     -ms-flex-negative: 0;
         flex-shrink: 0;
   }
@@ -1326,14 +1378,18 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo h4,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h4,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4,
-.projects .sliderContainer .leftSlide .fifthProjectInfo h4 {
+.projects .sliderContainer .leftSlide .fifthProjectInfo h4,
+.projects .sliderContainer .leftSlide .sixthProjectInfo h4,
+.projects .sliderContainer .leftSlide .seventhProjectInfo h4 {
     font-size: 0.9rem;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .sixthProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileImgContainer {
     width: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1344,14 +1400,18 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer .mobileProjectImg,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer .mobileProjectImg,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer .mobileProjectImg,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer .mobileProjectImg {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer .mobileProjectImg,
+.projects .sliderContainer .leftSlide .sixthProjectInfo .mobileImgContainer .mobileProjectImg,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileImgContainer .mobileProjectImg {
     width: 100%;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo .mobileMoreInfoBtn,
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileMoreInfoBtn,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileMoreInfoBtn,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileMoreInfoBtn,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileMoreInfoBtn {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .sixthProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileMoreInfoBtn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1369,14 +1429,18 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileMoreInfoBtn a,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileMoreInfoBtn a,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileMoreInfoBtn a,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileMoreInfoBtn a {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileMoreInfoBtn a,
+.projects .sliderContainer .leftSlide .sixthProjectInfo .mobileMoreInfoBtn a,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileMoreInfoBtn a {
     width: 40%;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo .mobileMoreInfoBtn a img,
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileMoreInfoBtn a img,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileMoreInfoBtn a img,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileMoreInfoBtn a img,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileMoreInfoBtn a img {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileMoreInfoBtn a img,
+.projects .sliderContainer .leftSlide .sixthProjectInfo .mobileMoreInfoBtn a img,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileMoreInfoBtn a img {
     width: 100%;
   }
   .projects .sliderContainer .rightSlide {
@@ -1434,14 +1498,18 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .sixthProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileImgContainer {
     width: 300px;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo .mobileMoreInfoBtn,
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileMoreInfoBtn,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileMoreInfoBtn,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileMoreInfoBtn,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileMoreInfoBtn {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .sixthProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileMoreInfoBtn {
     width: 250px;
   }
   .tools .toolKit li {
@@ -1470,7 +1538,9 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo h3,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h3,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h3,
-.projects .sliderContainer .leftSlide .fifthProjectInfo h3 {
+.projects .sliderContainer .leftSlide .fifthProjectInfo h3,
+.projects .sliderContainer .leftSlide .sixthProjectInfo h3,
+.projects .sliderContainer .leftSlide .seventhProjectInfo h3 {
     font-size: 1.4rem;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo h3,
@@ -1482,28 +1552,38 @@ footer p {
 .projects .sliderContainer .leftSlide .fourthProjectInfo h3,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4,
 .projects .sliderContainer .leftSlide .fifthProjectInfo h3,
-.projects .sliderContainer .leftSlide .fifthProjectInfo h4 {
+.projects .sliderContainer .leftSlide .fifthProjectInfo h4,
+.projects .sliderContainer .leftSlide .sixthProjectInfo h3,
+.projects .sliderContainer .leftSlide .sixthProjectInfo h4,
+.projects .sliderContainer .leftSlide .seventhProjectInfo h3,
+.projects .sliderContainer .leftSlide .seventhProjectInfo h4 {
     margin-bottom: 0;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo p,
 .projects .sliderContainer .leftSlide .secondProjectInfo p,
 .projects .sliderContainer .leftSlide .thirdProjectInfo p,
 .projects .sliderContainer .leftSlide .fourthProjectInfo p,
-.projects .sliderContainer .leftSlide .fifthProjectInfo p {
+.projects .sliderContainer .leftSlide .fifthProjectInfo p,
+.projects .sliderContainer .leftSlide .sixthProjectInfo p,
+.projects .sliderContainer .leftSlide .seventhProjectInfo p {
     font-size: 0.75rem;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo span,
 .projects .sliderContainer .leftSlide .secondProjectInfo span,
 .projects .sliderContainer .leftSlide .thirdProjectInfo span,
 .projects .sliderContainer .leftSlide .fourthProjectInfo span,
-.projects .sliderContainer .leftSlide .fifthProjectInfo span {
+.projects .sliderContainer .leftSlide .fifthProjectInfo span,
+.projects .sliderContainer .leftSlide .sixthProjectInfo span,
+.projects .sliderContainer .leftSlide .seventhProjectInfo span {
     display: none;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .sixthProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileImgContainer {
     margin-bottom: 10px;
   }
   .projects .sliderContainer .actionButtons button {
@@ -1539,21 +1619,27 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo h4,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h4,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4,
-.projects .sliderContainer .leftSlide .fifthProjectInfo h4 {
+.projects .sliderContainer .leftSlide .fifthProjectInfo h4,
+.projects .sliderContainer .leftSlide .sixthProjectInfo h4,
+.projects .sliderContainer .leftSlide .seventhProjectInfo h4 {
     font-size: 0.8rem;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo p,
 .projects .sliderContainer .leftSlide .secondProjectInfo p,
 .projects .sliderContainer .leftSlide .thirdProjectInfo p,
 .projects .sliderContainer .leftSlide .fourthProjectInfo p,
-.projects .sliderContainer .leftSlide .fifthProjectInfo p {
+.projects .sliderContainer .leftSlide .fifthProjectInfo p,
+.projects .sliderContainer .leftSlide .sixthProjectInfo p,
+.projects .sliderContainer .leftSlide .seventhProjectInfo p {
     margin: 10px 20px;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .sixthProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileImgContainer {
     width: 230px;
   }
   .tools .toolTitleCont .toolTitleImg {
@@ -1583,7 +1669,9 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo h3,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h3,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h3,
-.projects .sliderContainer .leftSlide .fifthProjectInfo h3 {
+.projects .sliderContainer .leftSlide .fifthProjectInfo h3,
+.projects .sliderContainer .leftSlide .sixhProjectInfo h3,
+.projects .sliderContainer .leftSlide .seventhProjectInfo h3 {
     font-size: 1.2rem;
     line-height: 2rem;
     margin-top: 20px;
@@ -1592,7 +1680,9 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo h4,
 .projects .sliderContainer .leftSlide .thirdProjectInfo h4,
 .projects .sliderContainer .leftSlide .fourthProjectInfo h4,
-.projects .sliderContainer .leftSlide .fifthProjectInfo h4 {
+.projects .sliderContainer .leftSlide .fifthProjectInfo h4,
+.projects .sliderContainer .leftSlide .sixhProjectInfo h4,
+.projects .sliderContainer .leftSlide .seventhProjectInfo h4 {
     font-size: 0.75rem;
     line-height: 1.2rem;
   }
@@ -1600,14 +1690,18 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo p,
 .projects .sliderContainer .leftSlide .thirdProjectInfo p,
 .projects .sliderContainer .leftSlide .fourthProjectInfo p,
-.projects .sliderContainer .leftSlide .fifthProjectInfo p {
+.projects .sliderContainer .leftSlide .fifthProjectInfo p,
+.projects .sliderContainer .leftSlide .sixhProjectInfo p,
+.projects .sliderContainer .leftSlide .seventhProjectInfo p {
     line-height: 1.2rem;
   }
   .projects .sliderContainer .leftSlide .firstProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileImgContainer,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileImgContainer,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .sixhProjectInfo .mobileImgContainer,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileImgContainer {
     width: 200px;
     margin-top: 20px;
   }
@@ -1615,7 +1709,9 @@ footer p {
 .projects .sliderContainer .leftSlide .secondProjectInfo .mobileMoreInfoBtn,
 .projects .sliderContainer .leftSlide .thirdProjectInfo .mobileMoreInfoBtn,
 .projects .sliderContainer .leftSlide .fourthProjectInfo .mobileMoreInfoBtn,
-.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileMoreInfoBtn {
+.projects .sliderContainer .leftSlide .fifthProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .sixhProjectInfo .mobileMoreInfoBtn,
+.projects .sliderContainer .leftSlide .seventhProjectInfo .mobileMoreInfoBtn {
     width: 200px;
     margin-bottom: 20px;
   }
